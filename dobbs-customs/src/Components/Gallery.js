@@ -33,13 +33,21 @@ const InnerContainer = styled.div`
 const ImgContainers = styled.div`
     width:400px;
     height:350px;
-    border:1px solid black;
+    border:1px solid grey;
     background-color:white;
     margin-top:25px;
     z-index:2;
 `
 
+const Img = styled.img`
+    object-fit:cover;
+    width:100%;
+    height:100%;
+`
+
 export default function Gallery() {
+
+    const image1 = "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/s600x600/270215736_113927897823247_3239680051854262127_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=RMaUba6ZwS0AX9iwg6E&_nc_ht=scontent-ort2-1.xx&oh=00_AT8ILuJBaMDajHN4t-9msoq9DL7rOTWkKMUTKevGHu6lqQ&oe=61EC685A"
 
     return(
         <>
@@ -48,35 +56,35 @@ export default function Gallery() {
             <H1>Past Builds</H1>
             <InnerContainer>
                 <ImgContainers>
-                
+                    <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
 
                 <ImgContainers>
-                
+                <Img src={image1} alt="build pic (unavailable)"></Img>
                 </ImgContainers>
             </InnerContainer>
         </Container>
