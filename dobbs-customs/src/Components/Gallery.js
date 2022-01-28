@@ -57,6 +57,7 @@ export default function Gallery() {
             <InnerContainer>
                 <ImgContainers>
                     <Img src={image1} alt="build pic (unavailable)"></Img>
+                    
                 </ImgContainers>
 
                 <ImgContainers>

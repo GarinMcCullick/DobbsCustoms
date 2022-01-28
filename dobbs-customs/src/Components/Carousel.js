@@ -74,6 +74,7 @@ export default function Carousel() {
 
                 <ImageContainer>
                     <Img src={image2} alt="build pic (unavailable)"></Img>
+                    <p>idea: slide pictures animated going left to right. with the middle one coming forward like how its setup now. and on hover (desktop) (just swipe if on mobile) you can swipe left or right to scroll through pics</p>
                 </ImageContainer>
                 
                 <ImageContainer3>
