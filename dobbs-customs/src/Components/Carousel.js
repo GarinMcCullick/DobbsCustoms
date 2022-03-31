@@ -15,13 +15,14 @@ export default function Carousel() {
   return (
     <>
       <Swiper
-        speed={2000}
-        spaceBetween={300}
+        slidesPerView={3}
+        spaceBetween={250}
+        slidesPerGroup={3}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        speed={3000}
         centeredSlides={true}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 4500, disableOnInteraction: false }}
         pagination={{
           clickable: true,
         }}
