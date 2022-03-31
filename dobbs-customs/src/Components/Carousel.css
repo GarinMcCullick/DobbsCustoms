@@ -14,9 +14,10 @@
 
 .swiper-slide img {
   display: block;
-  width: auto;
   height: 600px;
   width: 650px;
+  min-height: 500px;
+  min-width: 500px;
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
