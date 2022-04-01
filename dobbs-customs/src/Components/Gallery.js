@@ -1,5 +1,6 @@
-import React from "react";
 import styled from "styled-components";
+import "react-image-lightbox/style.css";
+import { useState } from "react";
 
 const H1 = styled.h1`
   font-size: 48px;
@@ -43,69 +44,55 @@ const Img = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  &:hover {
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
-    cursor: default;
-  }
 `;
 
 export default function Gallery() {
+  const images = [
+    "/pictures/pic1.jpg",
+    "/pictures/pic20.jpg",
+    "/pictures/pic19.jpg",
+    "/pictures/pic18.jpg",
+    "/pictures/pic16.jpg",
+    "/pictures/pic15.jpg",
+    "/pictures/pic14.jpg",
+    "/pictures/pic13.jpg",
+  ];
+
   return (
     <>
       <Container>
         <H1>Past Builds</H1>
         <InnerContainer>
           <ImgContainers>
-            <Img src={"/pictures/pic1.jpg"} alt="build pic (unavailable)"></Img>
+            <Img src={images[0]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic20.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[1]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic19.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[2]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic18.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[3]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic16.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[4]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic15.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[5]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic14.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[6]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
 
           <ImgContainers>
-            <Img
-              src={"/pictures/pic13.jpg"}
-              alt="build pic (unavailable)"
-            ></Img>
+            <Img src={images[7]} alt="build pic (unavailable)"></Img>
           </ImgContainers>
         </InnerContainer>
       </Container>
