@@ -57,7 +57,7 @@ export default function OwnerBio() {
       <Pic>
         <Img src="/pictures/Owner1.png" alt="Unavailable"></Img>
       </Pic>
-      <H3>Laine Dobbs</H3>
+      <H3>Hi I'm Laine</H3>
       <P>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
