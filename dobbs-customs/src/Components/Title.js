@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   align: top;
+  max-width: 100%;
   width: 100%;
   height: 75px;
   position: -webkit-sticky; /* Safari */
