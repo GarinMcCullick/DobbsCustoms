@@ -10,7 +10,7 @@ const H1 = styled.h1`
 
 const Container = styled.div`
   width: 100%;
-  height: 900px;
+  height: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -29,15 +29,54 @@ const InnerContainer = styled.div`
   border-radius: 25px;
   z-index: 1;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
 `;
 
 const ImgContainers = styled.div`
-  width: 400px;
-  height: 350px;
-  border: 1px solid grey;
-  background-color: white;
-  margin-top: 25px;
-  z-index: 2;
+  @media only screen and (min-width: 1200px) {
+    width: 400px;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 25px;
+    z-index: 2;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    width: 300px;
+    height: 325px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 25px;
+    z-index: 2;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    width: 300px;
+    height: 300px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 25px;
+    z-index: 2;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    width: 250px;
+    height: 250px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 25px;
+    z-index: 2;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+    height: 250px;
+    border: 1px solid grey;
+    background-color: white;
+    margin-top: 25px;
+    z-index: 2;
+  }
 `;
 
 const Img = styled.img`
