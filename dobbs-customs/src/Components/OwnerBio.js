@@ -15,6 +15,26 @@ const Container = styled.div`
   background-color: #3b3b3b;
   border-radius: 1%;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
+
+  @media only screen and (min-width: 1200px) {
+    width: 45%;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    width: 50%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    width: 70%;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    width: 75%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 75%;
+  }
 `;
 
 const Pic = styled.div`
@@ -38,6 +58,26 @@ const H3 = styled.h3`
   border-bottom: 2px solid #b28228;
   padding-bottom: 0.1rem;
   color: #b28228;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 22px;
+  }
 `;
 
 const P = styled.p`
@@ -49,6 +89,26 @@ const P = styled.p`
   color: #3b3b3b;
   background-color: #b28228;
   padding: 0.5rem;
+
+  @media only screen and (min-width: 1200px) and (max-width: 1600) {
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 export default function OwnerBio() {
