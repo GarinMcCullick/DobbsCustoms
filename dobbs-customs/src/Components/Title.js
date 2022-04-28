@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { GiSmartphone } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
+
 const Container = styled.div`
   background-color: rgb(128, 128, 128, 95%);
   display: flex;
@@ -27,9 +28,27 @@ const InnerContainer = styled.div`
 const H1 = styled.h1`
   color: black;
   text-align: center;
-  font-size: 50px;
   letter-spacing: 0.5rem;
   font-family: serif;
+  @media only screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 22px;
+  }
 `;
 
 const Div = styled.div`
@@ -38,7 +57,7 @@ const Div = styled.div`
   right: 0;
   margin-top: 0.9rem;
   margin-right: 1rem;
-  width: 10%;
+  width: 15%;
   height: auto;
   display: flex;
   flex-flow: row wrap;
@@ -140,6 +159,54 @@ const Email = styled.p`
   }
 `;
 
+const Smartphone = styled(GiSmartphone)`
+  color: lightgreen;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 35px;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+  }
+`;
+
+const OutlineMail = styled(HiOutlineMail)`
+  color: skyblue;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    font-size: 35px;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+  }
+`;
+
 export default function Title() {
   return (
     <Container>
@@ -147,10 +214,10 @@ export default function Title() {
         <H1>Dobbs Customs</H1>
         <Div>
           <Phone>
-            <GiSmartphone size="45px" color="lightgreen" />
+            <Smartphone />
           </Phone>
           <Email>
-            <HiOutlineMail size="45px" color="skyblue" />
+            <OutlineMail />
           </Email>
         </Div>
       </InnerContainer>
