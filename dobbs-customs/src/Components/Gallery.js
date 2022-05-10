@@ -16,6 +16,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 75px;
+
+  @media only screen and (max-width: 992px) {
+    height: 650px;
+  }
 `;
 
 const InnerContainer = styled.div`
@@ -30,6 +34,12 @@ const InnerContainer = styled.div`
   z-index: 1;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
   padding-bottom: 1rem;
+
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+  }
 `;
 
 const ImgContainers = styled.div`
@@ -40,6 +50,14 @@ const ImgContainers = styled.div`
     background-color: white;
     margin-top: 25px;
     z-index: 2;
+  }
+
+  @media only screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   @media only screen and (min-width: 992px) and (max-width: 1199px) {

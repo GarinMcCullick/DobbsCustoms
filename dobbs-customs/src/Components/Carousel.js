@@ -19,6 +19,7 @@ export default function Carousel() {
         loop={true}
         loopFillGroupWithBlank={true}
         speed={3000}
+        freeMode={true}
         centeredSlides={true}
         autoplay={{ delay: 4500, disableOnInteraction: false }}
         pagination={{
