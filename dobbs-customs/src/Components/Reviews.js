@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 
 const Container = styled.div`
   @media only screen and (min-width: 1200px) {
-    width: calc(100% + 300px);
+    width: 100% ;
     height: 475px;
     margin-top: 125px;
     background-color: #b28228;
@@ -56,12 +56,12 @@ const DriftContainer = styled.div`
       animation-play-state: paused;
       cursor: auto;
     }
-    transform: translateX(100%);
+    transform: translateX(99%);
     animation: drift 20s linear infinite;
 
     @keyframes drift {
       to {
-        transform: translateX(-100%);
+        transform: translateX(-99%);
       }
     }
   }

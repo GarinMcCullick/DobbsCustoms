@@ -14,6 +14,9 @@
 
 .swiper-slide img {
   display: block;
+  position:relative;
+  left:0;
+  bottom:0;
   height: 600px;
   width: 650px;
   min-height: 500px;
@@ -99,8 +102,12 @@
   }
 
   .swiper-slide img {
+    width:225px;
     height:250px;
     min-height: 200px;
     min-width: 225px;
+    margin-left:-1rem;
+    margin-right:-1rem;
   }
+
 }
