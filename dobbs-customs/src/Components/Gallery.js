@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "react-image-lightbox/style.css";
-import { useState } from "react";
 
 const H1 = styled.h1`
   font-size: 48px;
